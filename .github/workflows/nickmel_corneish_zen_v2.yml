@@ -1,5 +1,4 @@
 # https://github.com/manna-harbour/miryoku
-
 name: 'nickmel's build of corneish_zen_v2'
 on: workflow_dispatch
 jobs:
