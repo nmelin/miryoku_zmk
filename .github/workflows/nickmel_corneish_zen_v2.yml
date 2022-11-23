@@ -1,0 +1,13 @@
+# https://github.com/manna-harbour/miryoku
+
+name: 'nickmel's build of corneish_zen_v2'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["corneish_zen_v2_left","corneish_zen_v2_right"]'
+      custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR"]'
+      kconfig: '["CONFIG_ZMK_MOUSE=y"]'
+      branches: '["zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
